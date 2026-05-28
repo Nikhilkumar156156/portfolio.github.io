@@ -161,26 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // --- 7. Journey Tabs (Experience vs Education) ---
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const timelineContents = document.querySelectorAll('.timeline-content');
 
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetTab = btn.getAttribute('data-tab');
-
-            // Remove active classes
-            tabBtns.forEach(b => b.classList.remove('active'));
-            timelineContents.forEach(content => content.classList.remove('active'));
-
-            // Add active class to clicked button and target content
-            btn.classList.add('active');
-            const targetContent = document.getElementById(`timeline-${targetTab}`);
-            if (targetContent) {
-                targetContent.classList.add('active');
-            }
-        });
-    });
 
 
     // --- 8. Scroll triggered animations (Intersection Observer) ---
