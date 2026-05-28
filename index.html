@@ -17,8 +17,9 @@
     <meta property="og:description" content="Portfolio of Nikhil Kumar (Nik Enters), B.Tech Computer Science student, YouTuber, Game Developer, and AI Storytelling Enthusiast.">
     <meta property="og:image" content="assets/og-image.jpg">
 
-    <!-- Stylesheet Link -->
+    <!-- Stylesheet Links -->
     <link rel="stylesheet" href="style.css?v=2.0">
+    <link rel="stylesheet" href="demos.css?v=1.0">
 </head>
 <body>
 
@@ -402,8 +403,7 @@
                 <div class="projects-filter">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="web">Web Development</button>
-                    <button class="filter-btn" data-filter="script">Scripting & Automation</button>
-                    <button class="filter-btn" data-filter="algo">Core Algorithms</button>
+                    <button class="filter-btn" data-filter="script">Scripting & Games</button>
                 </div>
 
                 <div class="projects-grid" id="projects-grid">
@@ -437,6 +437,9 @@
                                 <a href="https://github.com/Nikhilkumar156156/My_Projects/blob/main/NewsAPI_TextToSpeech.py" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
+                                <button class="project-link run-demo-btn" data-project="voice-news">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -473,7 +476,7 @@
                                 <a href="https://github.com/Nikhilkumar156156/Nikhil156156.github.io" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
-                                <a href="https://Nikhilkumar156156.github.io" target="_blank" rel="noopener" class="project-link">
+                                <a href="https://nikhilkumar156156.github.io/portfolio.github.io/" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="external-link"></i> Live site
                                 </a>
                             </div>
@@ -510,6 +513,9 @@
                                 <a href="https://github.com/Nikhilkumar156156/My_Projects" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
+                                <button class="project-link run-demo-btn" data-project="media-extract">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -544,42 +550,98 @@
                                 <a href="https://github.com/Nikhilkumar156156/My_Projects/blob/main/RenameIt.py" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
+                                <button class="project-link run-demo-btn" data-project="rename-it">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Project 5: C/C++ Algorithms Core -->
-                    <div class="project-card glass-card" data-category="algo">
+                    <!-- Project 5: Rock Paper Scissors Game -->
+                    <div class="project-card glass-card" data-category="script">
                         <div class="project-img-container">
                             <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
                                 <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
-                                <circle cx="30" cy="30" r="10" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
-                                <circle cx="70" cy="18" r="7" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
-                                <circle cx="70" cy="42" r="7" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
-                                <line x1="39" y1="26" x2="63" y2="19" stroke="var(--border-color)" stroke-width="1.5"/>
-                                <line x1="39" y1="34" x2="63" y2="41" stroke="var(--border-color)" stroke-width="1.5"/>
-                                <text x="30" y="33" font-size="8" fill="#ffffff" text-anchor="middle" font-family="monospace">Root</text>
+                                <!-- Rock symbol (circle) -->
+                                <circle cx="22" cy="30" r="8" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
+                                <path d="M18 30 H26 M22 26 V34" stroke="var(--primary)" stroke-width="1"/>
+                                <!-- Paper symbol (rectangle) -->
+                                <rect x="42" y="18" width="16" height="24" rx="2" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <line x1="46" y1="24" x2="54" y2="24" stroke="var(--secondary)" stroke-width="1"/>
+                                <line x1="46" y1="30" x2="54" y2="30" stroke="var(--secondary)" stroke-width="1"/>
+                                <!-- Scissor symbol -->
+                                <circle cx="74" cy="22" r="3.5" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
+                                <circle cx="74" cy="38" r="3.5" fill="none" stroke="var(--text-primary)" stroke-width="1.5"/>
+                                <line x1="77" y1="24" x2="85" y2="34" stroke="var(--text-primary)" stroke-width="1.5"/>
+                                <line x1="77" y1="36" x2="85" y2="26" stroke="var(--text-primary)" stroke-width="1.5"/>
                             </svg>
                             <div class="project-badges">
-                                <span class="project-badge">C/C++</span>
-                                <span class="project-badge">Algorithms</span>
+                                <span class="project-badge">Python</span>
+                                <span class="project-badge">Game</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-title">C/C++ Algorithms Core</h3>
+                            <h3 class="project-title">Rock Paper Scissors</h3>
                             <p class="project-desc">
-                                Core engineering algorithm repository containing standard data structures, search algorithms, and electrical-computational logic.
+                                A classic interactive terminal-based game of Stone, Paper, Scissors implementing randomized opponent moves and clean score tracking mechanics.
                             </p>
                             <div class="project-tags">
-                                <span class="project-tag">C</span>
-                                <span class="project-tag">C++</span>
-                                <span class="project-tag">Data Structures</span>
-                                <span class="project-tag">Compilers</span>
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Random</span>
+                                <span class="project-tag">Game Loop</span>
+                                <span class="project-tag">CLI</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/Nikhilkumar156156/C-Programs" target="_blank" rel="noopener" class="project-link">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects/blob/main/RockPaperScissor.py" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
+                                <button class="project-link run-demo-btn" data-project="rock-paper-scissors">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Video Caption Merger -->
+                    <div class="project-card glass-card" data-category="script">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <!-- Video Screen -->
+                                <rect x="15" y="10" width="70" height="40" rx="3" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <!-- Play button shape -->
+                                <polygon points="45,22 45,34 55,28" fill="var(--primary)"/>
+                                <!-- Captions text box -->
+                                <rect x="25" y="38" width="50" height="8" rx="2" fill="rgba(0,0,0,0.6)" stroke="var(--border-color)" stroke-width="1"/>
+                                <!-- Mock text lines (words) -->
+                                <line x1="30" y1="42" x2="38" y2="42" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="42" y1="42" x2="48" y2="42" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="52" y1="42" x2="62" y2="42" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="66" y1="42" x2="70" y2="42" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">OpenCV</span>
+                                <span class="project-badge">Video</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Video Caption Merger</h3>
+                            <p class="project-desc">
+                                Automates subtitle rendering on MP4 videos by parsing SRT subtitles and drawing stylized, outline-stroked captions with word-by-word active highlights.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OpenCV (cv2)</span>
+                                <span class="project-tag">Pillow (PIL)</span>
+                                <span class="project-tag">PySRT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects/tree/main/captions" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <button class="project-link run-demo-btn" data-project="video-caption">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -613,9 +675,15 @@
                                 <a href="https://github.com/Nikhilkumar156156/My_Projects" target="_blank" rel="noopener" class="project-link">
                                     <i data-lucide="github"></i> Code
                                 </a>
+                                <button class="project-link run-demo-btn" data-project="password-suite">
+                                    <i data-lucide="play"></i> Try Demo
+                                </button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="more-coming-soon" style="text-align: center; margin-top: 3rem; font-size: 1.1rem; color: var(--text-muted); display: flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 500;">
+                    <span>More projects coming soon</span> 🙂
                 </div>
             </div>
         </section>
@@ -790,9 +858,31 @@
         <i data-lucide="arrow-up"></i>
     </a>
 
+    <!-- Project Demo Modal Overlay -->
+    <div class="demo-modal-overlay" id="demo-modal-overlay" role="dialog" aria-modal="true">
+        <div class="demo-modal-container glass-card">
+            <div class="demo-modal-header">
+                <div class="demo-modal-header-left">
+                    <h2 id="demo-modal-title">Project Demo</h2>
+                    <span class="demo-modal-badge" id="demo-modal-badge">Interactive Simulator</span>
+                </div>
+                <button class="demo-modal-close" id="demo-modal-close" aria-label="Close Demo">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="demo-modal-body" id="demo-modal-body">
+                <!-- Dynamic Content Will Be Loaded Here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gifshot CDN (for compiling GIFs client-side in Media Extractor) -->
+    <script src="https://cdn.jsdelivr.net/npm/gifshot@0.3.5/dist/gifshot.min.js"></script>
     <!-- Lucide Icons Script -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <!-- Custom Logic Script -->
-    <script src="script.js?v=1.2"></script>
+    <script src="script.js?v=2.0"></script>
+    <!-- Demos Logic Script -->
+    <script src="demos.js?v=1.0"></script>
 </body>
 </html>
