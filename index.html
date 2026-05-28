@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Kumar | Software Engineer & Tech Innovator</title>
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="description" content="Portfolio of Nikhil Kumar, a Software Engineer & Tech Innovator bridging Full-Stack Web Development, Embedded Systems, and Electrical Engineering.">
+    <meta name="keywords" content="Nikhil Kumar, Software Engineer, Electrical Engineering, DTU, Full-Stack Developer, Embedded Systems, IoT, Portfolio, React Developer">
+    <meta name="author" content="Nikhil Kumar">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://linkedin.com/in/nikhil-kumar-ee156/">
+    <meta property="og:title" content="Nikhil Kumar | Software Engineer & Tech Innovator">
+    <meta property="og:description" content="Portfolio of Nikhil Kumar, a Software Engineer & Tech Innovator bridging Full-Stack Web Development, Embedded Systems, and Electrical Engineering.">
+    <meta property="og:image" content="assets/og-image.jpg">
+
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Floating Background Blobs -->
+    <div class="ambient-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo" id="nav-logo">Nikhil Kumar</a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" id="link-home">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#journey" class="nav-link" id="link-journey">Journey</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <!-- Mobile Navigation Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="hero-welcome">Welcome to my space</span>
+                        <h1 class="hero-title">Hi, I'm <span>Nikhil Kumar</span></h1>
+                        <h2 class="hero-subtitle">I build <span id="typed-text"></span><span class="typing-cursor">|</span></h2>
+                        <p class="hero-description">
+                            Bridging the gap between software engineering and hardware innovation. Specializing in full-stack web applications, system architectures, and smart embedded system solutions.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary" id="hero-btn-work">
+                                View Work <i data-lucide="arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                                Let's Connect
+                            </a>
+                        </div>
+                        <div class="hero-socials">
+                            <span class="hero-socials-label">Connect:</span>
+                            <a href="https://linkedin.com/in/nikhil-kumar-ee156/" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Nikhilkumar156156" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub Profile">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@EnterInEntire" target="_blank" rel="noopener" class="btn-icon" aria-label="YouTube Channel">
+                                <i data-lucide="youtube"></i>
+                            </a>
+                            <a href="mailto:nikhil.kumar.ee156@gmail.com" class="btn-icon" aria-label="Email Address">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="hero-canvas-wrap">
+                            <!-- Rotating Tech Orbit Background -->
+                            <div class="tech-orbits">
+                                <div class="orbit orbit-1">
+                                    <div class="tech-node node-1"></div>
+                                </div>
+                                <div class="orbit orbit-2">
+                                    <div class="tech-node node-2"></div>
+                                </div>
+                                <div class="orbit orbit-3">
+                                    <div class="tech-node node-3"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Central Avatar PlaceHolder -->
+                            <div class="hero-avatar">
+                                <img src="https://avatars.githubusercontent.com/u/213021330?v=4" alt="Nikhil Kumar Photo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="reveal">
+            <div class="container">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <p class="section-subtitle">A brief introduction to who I am, my philosophy, and the value I bring to technology teams.</p>
+                
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="visual-box glass-card">
+                            <h3 style="margin-bottom: 1rem; color: var(--primary);">Interdisciplinary Mindset</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                                My background in Electrical Engineering equips me with a unique structural and analytical perspective. I approach code not just as a set of logical operations, but as an optimization challenge, mimicking power distribution systems and microprocessors.
+                            </p>
+                            
+                            <div class="features-list">
+                                <div class="feature-item">
+                                    <i data-lucide="code-2"></i>
+                                    <div>
+                                        <div class="feature-title">Full Stack Web Dev</div>
+                                        <div class="feature-desc">Scalable web structures.</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-lucide="cpu"></i>
+                                    <div>
+                                        <div class="feature-title">Embedded Systems</div>
+                                        <div class="feature-desc">Hardware firmware integration.</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-lucide="database"></i>
+                                    <div>
+                                        <div class="feature-title">Data Processing</div>
+                                        <div class="feature-desc">Telemetry & IoT logging.</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <i data-lucide="zap"></i>
+                                    <div>
+                                        <div class="feature-title">System Analysis</div>
+                                        <div class="feature-desc">Optimization & algorithms.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-info">
+                        <h3>Combining Software with Physical Engineering</h3>
+                        <p>
+                            I design and build digital ecosystems. Currently specializing in building modern web applications using JavaScript/TypeScript, React, Node.js, and integrating them with physical sensors or databases.
+                        </p>
+                        <p>
+                            Whether creating a web-based real-time dashboard or compiling C++ programs for automated microcontroller grids, I love building robust tools that make life easier. I am committed to clean code, responsive systems, and visually aesthetic layouts.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card glass-card">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Years Coding</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-number">10+</div>
+                                <div class="stat-label">Completed Projects</div>
+                            </div>
+                            <div class="stat-card glass-card">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">System Uptime</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section (Timeline) -->
+        <section id="journey" class="reveal">
+            <div class="container">
+                <h2 class="section-title">My <span>Journey</span></h2>
+                <p class="section-subtitle">A chronological view of my academic foundation and professional evolution.</p>
+                
+                <div class="timeline-tabs">
+                    <button class="tab-btn active" id="tab-experience" data-tab="experience">Work Experience</button>
+                    <button class="tab-btn" id="tab-education" data-tab="education">Education</button>
+                </div>
+
+                <!-- Experience Timeline Contents -->
+                <div class="timeline-content active" id="timeline-experience">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Full-Stack Engineer</h3>
+                                <span class="timeline-org">TechLabs Innovations</span>
+                            </div>
+                            <span class="timeline-date">Jun 2025 - Present</span>
+                        </div>
+                        <div class="timeline-desc">
+                            <p>Designing React-based interfaces and high-performance Node.js RESTful APIs.</p>
+                            <ul>
+                                <li>Reduced frontend state-management bottlenecks, boosting application performance by 35%.</li>
+                                <li>Implemented secure JWT OAuth authentication systems and designed clean MongoDB schemas.</li>
+                                <li>Pioneered responsive dashboard features used by over 5,000 active monthly clients.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">IoT Systems Intern</h3>
+                                <span class="timeline-org">Electrosmart Labs</span>
+                            </div>
+                            <span class="timeline-date">Jan 2024 - Jul 2024</span>
+                        </div>
+                        <div class="timeline-desc">
+                            <p>Developed software integrations for IoT microcontrollers and cloud telemetry systems.</p>
+                            <ul>
+                                <li>Configured microprocessors (ESP32 / Arduino) to collect and publish data via MQTT channels.</li>
+                                <li>Created custom Python script integrations for real-time visualization of sensor data streams.</li>
+                                <li>Assisted in designing custom circuit board layouts and troubleshooting hardware-software interfaces.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Timeline Contents -->
+                <div class="timeline-content" id="timeline-education">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">B.Tech - Electrical Engineering</h3>
+                                <span class="timeline-org">Delhi Technological University (DTU)</span>
+                            </div>
+                            <span class="timeline-date">2022 - 2026</span>
+                        </div>
+                        <div class="timeline-desc">
+                            <p>Focusing on Electrical Networks, Embedded Systems, Signal Analysis, and Control Systems.</p>
+                            <ul>
+                                <li>Relevant Coursework: Microcontrollers & Interfacing, Signals and Systems, Computer Architecture, Data Structures & Algorithms.</li>
+                                <li>Academic Project: Automated Smart Grid Telemetry monitoring power fluctuations using sensors and Node-RED servers.</li>
+                                <li>Active Member, DTU Electronics Society and Code Club.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">All India Senior School Certificate</h3>
+                                <span class="timeline-org">Central Board of Secondary Education</span>
+                            </div>
+                            <span class="timeline-date">Graduated 2021</span>
+                        </div>
+                        <div class="timeline-desc">
+                            <p>Completed High School Education specializing in Physics, Chemistry, and Mathematics (PCM).</p>
+                            <ul>
+                                <li>Graduated with Distinction (94% Aggregate).</li>
+                                <li>Developed a foundational interest in electronics and programming during class projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <div class="container">
+                <h2 class="section-title">Core <span>Skills</span></h2>
+                <p class="section-subtitle">The technologies, platforms, and frameworks I use to bring designs to life.</p>
+                
+                <div class="skills-grid">
+                    <!-- Software Dev Skills -->
+                    <div class="skill-category glass-card">
+                        <h3><i data-lucide="code"></i> Software Development</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript / TypeScript</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>React & Next.js</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Node.js / Express</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python (Django/Data analysis)</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hardware & Engineering Skills -->
+                    <div class="skill-category glass-card">
+                        <h3><i data-lucide="cpu"></i> Hardware & Embedded</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>C / C++ (Embedded)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Microcontrollers (ESP32/Arduino)</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>IoT Protocols (MQTT/HTTP)</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>MATLAB & Simulink</span>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-percent="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools & Databases -->
+                    <div class="skill-category glass-card">
+                        <h3><i data-lucide="tool"></i> Tools & Databases</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                            Additionally, I employ modern tooling and databases to manage workflow architectures and deploy code bases efficiently.
+                        </p>
+                        <div class="skills-tags-wrap">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">SQL / PostgreSQL</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">Linux / Bash</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <div class="container">
+                <h2 class="section-title">Featured <span>Projects</span></h2>
+                <p class="section-subtitle">Explore a collection of systems, applications, and hardware integration prototypes I have engineered.</p>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="script">Scripting & Automation</button>
+                    <button class="filter-btn" data-filter="algo">Core Algorithms</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1: Voice News Reader -->
+                    <div class="project-card glass-card" data-category="script">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <path d="M20 30 Q 35 15, 50 30 T 80 30" fill="none" stroke="var(--primary)" stroke-width="2"/>
+                                <path d="M35 30 Q 42 20, 50 30 T 65 30" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <circle cx="50" cy="30" r="3" fill="var(--text-primary)"/>
+                                <path d="M10 10 L25 25 M90 10 L75 25" stroke="var(--border-color)" stroke-width="1" opacity="0.3"/>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">Python</span>
+                                <span class="project-badge">TTS</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Voice News Reader</h3>
+                            <p class="project-desc">
+                                A dynamic news speaking utility connecting to NewsAPI to fetch the latest trending headlines across selected topics and convert them to audio streams.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">NewsAPI</span>
+                                <span class="project-tag">Text-to-Speech</span>
+                                <span class="project-tag">JSON API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects/blob/main/NewsAPI_TextToSpeech.py" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Developer Portfolio -->
+                    <div class="project-card glass-card" data-category="web">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <rect x="20" y="12" width="60" height="36" rx="3" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
+                                <line x1="20" y1="20" x2="80" y2="20" stroke="var(--border-color)" stroke-width="1.5"/>
+                                <circle cx="28" cy="16" r="1.5" fill="#ef4444"/>
+                                <circle cx="34" cy="16" r="1.5" fill="#f59e0b"/>
+                                <circle cx="40" cy="16" r="1.5" fill="#10b981"/>
+                                <text x="50" y="34" font-size="8" fill="var(--secondary)" text-anchor="middle" font-family="monospace">Nikhil.io</text>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">Web</span>
+                                <span class="project-badge">Pages</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Personal Developer Portfolio</h3>
+                            <p class="project-desc">
+                                Source code repository for my personal digital footprint hosted via GitHub Pages, displaying experiences, capabilities, and open source utilities.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">GitHub Pages</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/Nikhil156156.github.io" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                                <a href="https://Nikhilkumar156156.github.io" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="external-link"></i> Live site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Media Extraction Suite -->
+                    <div class="project-card glass-card" data-category="script">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <rect x="25" y="15" width="30" height="30" fill="none" stroke="var(--primary)" stroke-width="2"/>
+                                <polygon points="65,15 85,25 65,35" fill="var(--secondary)"/>
+                                <line x1="55" y1="30" x2="65" y2="30" stroke="var(--border-color)" stroke-width="2"/>
+                                <circle cx="35" cy="25" r="4" fill="var(--secondary)"/>
+                                <circle cx="45" cy="35" r="3" fill="var(--primary)"/>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">Automation</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Media Extraction Suite</h3>
+                            <p class="project-desc">
+                                Collection of OpenCV and ImageIO Python tools automating frame-by-frame image extraction from video and combining image arrays into smooth GIFs.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OpenCV (cv2)</span>
+                                <span class="project-tag">ImageIO</span>
+                                <span class="project-tag">PIL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: RenameIt File Automator -->
+                    <div class="project-card glass-card" data-category="script">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <rect x="15" y="15" width="25" height="18" rx="2" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
+                                <rect x="60" y="27" width="25" height="18" rx="2" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <path d="M45 24 L55 24 L52 20 M55 24 L52 28" stroke="var(--text-primary)" stroke-width="1.5" fill="none"/>
+                                <text x="27.5" y="27" font-size="6" fill="var(--text-muted)" text-anchor="middle">old.txt</text>
+                                <text x="72.5" y="39" font-size="6" fill="var(--text-primary)" text-anchor="middle">new.txt</text>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">Automation</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">RenameIt File Automator</h3>
+                            <p class="project-desc">
+                                Clean file management script designed to bulk rename target documents inside directories, supporting extension matching and serial numbers.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">OS System</span>
+                                <span class="project-tag">File System</span>
+                                <span class="project-tag">Automation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects/blob/main/RenameIt.py" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: C/C++ Algorithms Core -->
+                    <div class="project-card glass-card" data-category="algo">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <circle cx="30" cy="30" r="10" fill="none" stroke="var(--primary)" stroke-width="1.5"/>
+                                <circle cx="70" cy="18" r="7" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <circle cx="70" cy="42" r="7" fill="none" stroke="var(--secondary)" stroke-width="1.5"/>
+                                <line x1="39" y1="26" x2="63" y2="19" stroke="var(--border-color)" stroke-width="1.5"/>
+                                <line x1="39" y1="34" x2="63" y2="41" stroke="var(--border-color)" stroke-width="1.5"/>
+                                <text x="30" y="33" font-size="8" fill="#ffffff" text-anchor="middle" font-family="monospace">Root</text>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">C/C++</span>
+                                <span class="project-badge">Algorithms</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">C/C++ Algorithms Core</h3>
+                            <p class="project-desc">
+                                Core engineering algorithm repository containing standard data structures, search algorithms, and electrical-computational logic.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">C</span>
+                                <span class="project-tag">C++</span>
+                                <span class="project-tag">Data Structures</span>
+                                <span class="project-tag">Compilers</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/C-Programs" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Secure Password Suite -->
+                    <div class="project-card glass-card" data-category="script">
+                        <div class="project-img-container">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: #1e293b; width:100%; height:100%;">
+                                <rect width="100" height="60" fill="#0f172a" opacity="0.4"/>
+                                <rect x="35" y="25" width="30" height="20" rx="2" fill="none" stroke="var(--primary)" stroke-width="2"/>
+                                <path d="M42 25 V18 A8 8 0 0 1 58 18 V25" fill="none" stroke="var(--secondary)" stroke-width="2"/>
+                                <circle cx="50" cy="33" r="2.5" fill="var(--text-primary)"/>
+                                <line x1="50" y1="35" x2="50" y2="40" stroke="var(--text-primary)" stroke-width="1.5"/>
+                            </svg>
+                            <div class="project-badges">
+                                <span class="project-badge">Security</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Secure Password Suite</h3>
+                            <p class="project-desc">
+                                Python utility program implementing entropy validation, complexity evaluation, and cryptographically secure password generators.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Cryptography</span>
+                                <span class="project-tag">Security</span>
+                                <span class="project-tag">Random</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Nikhilkumar156156/My_Projects" target="_blank" rel="noopener" class="project-link">
+                                    <i data-lucide="github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <div class="container">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <p class="section-subtitle">Feel free to reach out to me for partnerships, employment opportunities, or simply to talk tech.</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Cards info -->
+                    <div class="contact-info">
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Me</h4>
+                                <p><a href="mailto:nikhil.kumar.ee156@gmail.com">nikhil.kumar.ee156@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>New Delhi, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p><a href="https://linkedin.com/in/nikhil-kumar-ee156/" target="_blank" rel="noopener">nikhil-kumar-ee156</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card glass-card">
+                            <div class="contact-icon">
+                                <i data-lucide="youtube"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>YouTube</h4>
+                                <p><a href="https://www.youtube.com/@EnterInEntire" target="_blank" rel="noopener">@EnterInEntire</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Box -->
+                    <div class="contact-form-wrap glass-card">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <span class="form-error">Please enter your name</span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <span class="form-error">Please enter a valid email address</span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" id="form-subject" class="form-input" placeholder=" " required>
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <span class="form-error">Please enter a subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <span class="form-error">Please write a message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width: 100%;">
+                                Send Message <i data-lucide="send" id="submit-icon"></i>
+                                <span class="submit-loader" id="submit-loader"></span>
+                            </button>
+                        </form>
+
+                        <!-- Success Box -->
+                        <div class="form-success-msg" id="form-success-msg">
+                            <i data-lucide="check-circle-2"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out, Nikhil. I'll get back to you as soon as possible.</p>
+                            <button class="btn btn-secondary" id="form-reset-btn" style="margin-top: 1rem;">Send Another Message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Nikhil Kumar</div>
+            <div class="footer-copy">
+                &copy; <span id="year">2026</span> Nikhil Kumar. All rights reserved.
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/nikhil-kumar-ee156/" target="_blank" rel="noopener" class="btn-icon" aria-label="LinkedIn Profile">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://github.com/Nikhilkumar156156" target="_blank" rel="noopener" class="btn-icon" aria-label="GitHub Profile">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.youtube.com/@EnterInEntire" target="_blank" rel="noopener" class="btn-icon" aria-label="YouTube Channel">
+                    <i data-lucide="youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Link Button -->
+    <a href="#home" class="btn-icon scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to Top">
+        <i data-lucide="arrow-up"></i>
+    </a>
+
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
