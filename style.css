@@ -15,41 +15,41 @@
     --max-width: 1200px;
     --header-height: 80px;
 
-    /* Default Dark Theme Colors */
-    --bg-color: #0b0f19;
-    --bg-surface: #131c2e;
-    --bg-surface-elevated: #1e293b;
-    --primary: #3b82f6;
-    --primary-rgb: 59, 130, 246;
-    --secondary: #10b981;
-    --secondary-rgb: 16, 185, 129;
-    --text-primary: #f3f4f6;
-    --text-muted: #9ca3af;
-    --border-color: #1e293b;
-    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-    --glass-bg: rgba(19, 28, 46, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.05);
+    /* Default Dark Theme Colors (Black, Red, Purple) */
+    --bg-color: #050508;
+    --bg-surface: #0f0f15;
+    --bg-surface-elevated: #1a1525;
+    --primary: #ef233c; /* Vibrant Red */
+    --primary-rgb: 239, 35, 60;
+    --secondary: #9d4edd; /* Electric Purple */
+    --secondary-rgb: 157, 78, 221;
+    --text-primary: #f8f9fa;
+    --text-muted: #a5a5b5;
+    --border-color: #1c1826;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.7), 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 10px 10px -5px rgba(0, 0, 0, 0.6);
+    --glass-bg: rgba(15, 15, 21, 0.75);
+    --glass-border: rgba(239, 35, 60, 0.08);
 }
 
-/* Light Theme Overrides */
+/* Light Theme Overrides (White, Red, Purple) */
 [data-theme="light"] {
-    --bg-color: #f8fafc;
+    --bg-color: #fafafc;
     --bg-surface: #ffffff;
-    --bg-surface-elevated: #f1f5f9;
-    --primary: #2563eb;
-    --primary-rgb: 37, 99, 235;
-    --secondary: #059669;
-    --secondary-rgb: 5, 150, 105;
-    --text-primary: #0f172a;
-    --text-muted: #475569;
-    --border-color: #e2e8f0;
-    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --glass-bg: rgba(255, 255, 255, 0.75);
-    --glass-border: rgba(0, 0, 0, 0.08);
+    --bg-surface-elevated: #f3f0f7;
+    --primary: #d90429; /* Deep Red */
+    --primary-rgb: 217, 4, 41;
+    --secondary: #7b2cbf; /* Darker Purple */
+    --secondary-rgb: 123, 44, 191;
+    --text-primary: #121015;
+    --text-muted: #575560;
+    --border-color: #e2dff0;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    --glass-bg: rgba(255, 255, 255, 0.8);
+    --glass-border: rgba(123, 44, 191, 0.1);
 }
 
 /* --- Base & Reset Styles --- */
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title span {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 50%;
     width: 300px;
     height: 300px;
-    background-color: #a855f7;
+    background-color: var(--secondary);
     animation-delay: -10s;
 }
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary), #1d4ed8);
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     color: #ffffff;
     box-shadow: 0 4px 14px rgba(var(--primary-rgb), 0.3);
 }
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.5);
-    background: linear-gradient(135deg, #2563eb, #1e40af);
+    background: #ff3b53;
 }
 
 .btn-secondary {
@@ -348,7 +348,7 @@ header .container {
     font-weight: 800;
     letter-spacing: -1px;
     font-family: var(--font-heading);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -488,7 +488,7 @@ header .container {
 }
 
 .hero-title span {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -540,7 +540,7 @@ header .container {
     height: 380px;
     position: relative;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.1));
+    background: rgba(var(--primary-rgb), 0.08);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-lg);
     display: flex;
@@ -580,7 +580,7 @@ header .container {
 
 .node-1 { top: 0; left: 50%; transform: translate(-50%, -50%); background-color: var(--primary); }
 .node-2 { bottom: 20%; left: 10%; background-color: var(--secondary); }
-.node-3 { top: 30%; right: 5%; background-color: #a855f7; }
+.node-3 { top: 30%; right: 5%; background-color: var(--secondary); }
 
 .hero-avatar {
     z-index: 5;
@@ -671,7 +671,7 @@ header .container {
     color: var(--primary);
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -935,7 +935,7 @@ header .container {
 
 .skill-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    background: var(--secondary);
     border-radius: 4px;
     width: 0;
     transition: width 1.5s cubic-bezier(0.1, 0.8, 0.2, 1);
@@ -1267,7 +1267,7 @@ footer .container {
     font-size: 1.25rem;
     font-weight: 800;
     font-family: var(--font-heading);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), #b3001e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
