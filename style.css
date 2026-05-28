@@ -885,7 +885,7 @@ header .container {
 /* --- Skills Section --- */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2.5rem;
 }
 
@@ -995,7 +995,7 @@ header .container {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2.5rem;
 }
 
@@ -1296,4 +1296,61 @@ footer .container {
 .scroll-top-btn.visible {
     opacity: 1;
     visibility: visible;
+}
+
+/* --- Extra Responsiveness & Small Device Overrides --- */
+
+/* Small Devices (Phones under 480px) */
+@media (max-width: 480px) {
+    .hero-canvas-wrap {
+        width: 260px !important;
+        height: 260px !important;
+    }
+    .hero-avatar {
+        width: 170px !important;
+        height: 170px !important;
+    }
+    .orbit-1 { width: 240px !important; height: 240px !important; }
+    .orbit-2 { width: 180px !important; height: 180px !important; }
+    .orbit-3 { width: 120px !important; height: 120px !important; }
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+    .hero-subtitle {
+        font-size: 1.25rem !important;
+    }
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.8rem;
+    }
+    .hero-cta .btn {
+        width: 100%;
+    }
+    .skill-category {
+        padding: 1.5rem !important;
+    }
+    .contact-form-wrap {
+        padding: 1.5rem !important;
+    }
+    .section-title {
+        font-size: 2rem !important;
+    }
+}
+
+/* Stacking and Centering Footer on Small Mobile Screens */
+@media (max-width: 576px) {
+    footer .container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1.2rem !important;
+    }
+    .timeline-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.3rem !important;
+    }
+    .timeline-date {
+        align-self: flex-start !important;
+    }
 }
