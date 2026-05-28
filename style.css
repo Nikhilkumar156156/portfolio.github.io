@@ -423,7 +423,7 @@ header .container {
 }
 
 /* Mobile responsive menu */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .mobile-menu-btn {
         display: block;
     }
@@ -655,7 +655,7 @@ header .container {
 
 .about-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
@@ -738,7 +738,7 @@ header .container {
     color: var(--text-muted);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1238,7 +1238,7 @@ textarea.form-input {
     color: var(--secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
