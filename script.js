@@ -12,11 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const words = [
-        'Python Scripts.',
-        'Automation Utilities.',
-        'Responsive Web Sites.',
-        'C/C++ Algorithms.',
-        'Security Tools.'
+        'Machine Learning Explorer.',
+        'Python Developer.',
+        'AI & Data Science Learner.',
+        'Building Projects Every Day.',
+        'Future AI Engineer.',
+        'Interactive Games.',
+        'YouTube Videos.'
     ];
     let wordIndex = 0;
     let charIndex = 0;
